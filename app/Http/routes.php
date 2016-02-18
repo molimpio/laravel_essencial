@@ -24,3 +24,5 @@ Route::get('/produtos', 'ProdutosController@index');
 Route::get('produtoCreate', 'ProdutosController@create');
 Route::post('produtoStore', 'ProdutosController@store');
 Route::get('produtoDestroy/{id}', 'ProdutosController@destroy');
+Route::get('produtoEdit/{id}', 'ProdutosController@edit');
+Route::post('produtoUpdate/{id}', 'ProdutosController@update');

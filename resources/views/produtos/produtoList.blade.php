@@ -27,9 +27,12 @@
                 <td>{{$produto->id}}</td>
                 <td>{{$produto->nome}}</td>
                 <td>{{$produto->descricao}}</td>
-                <td>
+                <td width="20%">
                     <a href="{{ url('produtoDestroy', $produto->id) }}" class="btn btn-danger">
                         Remover&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                    <a href="{{ url('produtoEdit', $produto->id) }}" class="btn btn-primary">
+                        Editar&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span>
                     </a>
                 </td>
             </tr>
