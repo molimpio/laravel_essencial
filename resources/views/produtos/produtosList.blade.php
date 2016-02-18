@@ -2,10 +2,25 @@
 @section('content')
 <div class="container">
     <h1>Produtos</h1>
-    <ul>
-        @foreach($produtos as $produto)
-        <li>{{$produto->nome}} {{$produto->descricao}}</li>
-        @endforeach
-    </ul>
+    <table class="table table-bordered table-hover table-responsive table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($produtos as $produto)
+            <tr>
+                <td>{{$produto->id}}</td>
+                <td>{{$produto->nome}}</td>
+                <td>{{$produto->descricao}}</td>
+                <td></td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>    
 </div>
 @endsection
