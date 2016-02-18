@@ -27,7 +27,11 @@
                 <td>{{$produto->id}}</td>
                 <td>{{$produto->nome}}</td>
                 <td>{{$produto->descricao}}</td>
-                <td></td>
+                <td>
+                    <a href="{{ url('produtoDestroy', $produto->id) }}" class="btn btn-danger">
+                        Remover&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                </td>
             </tr>
             @endforeach
         </tbody>
