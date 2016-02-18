@@ -2,8 +2,8 @@
 
 namespace laravel_essencial\Http\Controllers;
 
-use Illuminate\Http\Request;
 use laravel_essencial\Http\Controllers\Controller;
+use laravel_essencial\Http\Requests\ProdutoRequest;
 use laravel_essencial\Produto;
 
 class ProdutosController extends Controller
@@ -35,7 +35,7 @@ class ProdutosController extends Controller
      *
      * @return Response
      */
-    public function store(Request $request)
+    public function store(ProdutoRequest $request)
     {
         $input = $request->all();
         Produto::create($input);
