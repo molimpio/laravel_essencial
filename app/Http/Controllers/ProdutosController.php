@@ -2,9 +2,9 @@
 
 namespace laravel_essencial\Http\Controllers;
 
-use laravel_essencial\Http\Requests;
-use laravel_essencial\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use laravel_essencial\Http\Controllers\Controller;
+use laravel_essencial\Produto;
 
 class ProdutosController extends Controller
 {
@@ -16,8 +16,8 @@ class ProdutosController extends Controller
      */
     public function index()
     {
-        $produtos = \laravel_essencial\Produto::all();
-        return view('produtos/produtosList', ['produtos' => $produtos]);
+        $produtos = Produto::all();
+        return view('produtos/produtoList', ['produtos' => $produtos]);
     }
 
     /**
@@ -27,7 +27,7 @@ class ProdutosController extends Controller
      */
     public function create()
     {
-        //
+        return view('produtos/produtoCreate');
     }
 
     /**
@@ -35,9 +35,11 @@ class ProdutosController extends Controller
      *
      * @return Response
      */
-    public function store()
+    public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Produto::create($input);
+        return redirect('produtos');
     }
 
     /**

@@ -20,4 +20,6 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('/', 'ProdutosController@index');
+Route::get('/produtos', 'ProdutosController@index');
+Route::get('produtoCreate', 'ProdutosController@create');
+Route::post('produtoStore', 'ProdutosController@store');

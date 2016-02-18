@@ -1,7 +1,17 @@
 @extends('app')
 @section('content')
-<div class="container">
-    <h1>Produtos</h1>
+<div class="container">   
+    <div class="form-inline">
+        <div class="form-group">
+            <h1>Produtos</h1>  
+        </div>
+        <div class="form-group">
+            &nbsp;&nbsp;&nbsp;<a href="produtoCreate" class="btn btn-primary" style="margin-top: 15px;">
+                Novo Produto&nbsp;&nbsp;<span class="glyphicon glyphicon-plus"></span>
+            </a>
+        </div>                    
+    </div>      
+
     <table class="table table-bordered table-hover table-responsive table-striped">
         <thead>
             <tr>
