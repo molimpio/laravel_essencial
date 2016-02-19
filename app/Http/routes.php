@@ -20,9 +20,14 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+//produtos
 Route::get('/produtos', 'ProdutosController@index');
 Route::get('produtoCreate', 'ProdutosController@create');
 Route::post('produtoStore', 'ProdutosController@store');
 Route::get('produtoDestroy/{id}', 'ProdutosController@destroy');
 Route::get('produtoEdit/{id}', 'ProdutosController@edit');
 Route::post('produtoUpdate/{id}', 'ProdutosController@update');
+
+//clientes
+Route::get('/clientes', 'ClientesController@index');
+Route::post('clienteSave', 'ClientesController@save');
