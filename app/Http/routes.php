@@ -29,5 +29,7 @@ Route::get('produtoEdit/{id}', 'ProdutosController@edit');
 Route::post('produtoUpdate/{id}', 'ProdutosController@update');
 
 //clientes
-Route::get('/clientes', 'ClientesController@index');
-Route::post('clienteSave', 'ClientesController@save');
+Route::get('/clientes', 'ClienteController@index');
+Route::post('clienteSave', 'ClienteController@save');
+Route::post('clienteUpdate/{id}', 'ClienteController@update');
+Route::get('clienteDestroy/{id}', 'ClienteController@destroy');

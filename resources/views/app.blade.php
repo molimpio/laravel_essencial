@@ -7,10 +7,14 @@
         <title>Laravel Essencial</title>
 
         <link href="/css/app.css" rel="stylesheet">
+        <link href="/DataTable/media/css/dataTables.bootstrap.min.css" rel="stylesheet">
+        <link href="/DataTable/media/css/jquery.dataTables.min.css" rel="stylesheet">
 
         <!-- Scripts -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/DataTable/media/js/jquery.dataTables.min.js"></script>
+        <script src="/DataTable/media/js/dataTables.bootstrap.js"></script>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
